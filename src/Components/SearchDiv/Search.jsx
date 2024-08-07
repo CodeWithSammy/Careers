@@ -3,6 +3,7 @@ import { AiOutlineSearch } from 'react-icons/ai';
 // import { BsHouseDoor, } from 'react-icons/bs';
 // import { CiLocationOn, } from 'react-icons/ci';
 
+
 const Search = () => {
   return (
     <div className='searchDiv grid gap-10 bg-greyIsh rounded-[10px] p-[3rem]'>
