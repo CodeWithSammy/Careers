@@ -23,9 +23,9 @@ const Search = () => {
     </div>
 
     <div className='secDiv flex items-center gap-2 justify-center'>
-        <div className='singleSearch flex items-center gap-2'>
+        <div className='singleSearch flex place-items-center gap-2'>
           <label htmlFor="relevance" className='text-[white] font-semibold'>Sort by: </label>
-          <select name="" id="relevance" className='bg-transparent rounded-[3px] px-4 py-1'>
+          <select name="" id="relevance" className='bg-transparent rounded-[3px] px-1 py-1'>
             <option value="">Relevance</option>
             <option value="">Inclusive</option>
             <option value="">Starts With</option>
@@ -53,7 +53,7 @@ const Search = () => {
           </select>
         </div>
 
-        <span className="text-[#a1a1a1] cursor-pointer">Clear All</span>
+        <span className="text-[white] cursor-pointer">Clear All</span>
       </div>
       </form>
 
