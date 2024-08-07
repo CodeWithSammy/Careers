@@ -3,7 +3,7 @@ import coverImage from '../../Assets/images/cover.jpg'; // Import the image prop
 import './Search.css';
 const Search = () => {
   return (
-  <div className='searchDiv grid gap-10 rounded-[10px] p-[3rem]'>
+  <div className='searchDiv grid gap-10  p-[3rem]'>
   <form action="">
     <div
       className='firstDiv flex justify-between items-center rounded-[8px] gap-[10px] p-5 shadow-lg shadow-greyIsh-700'
@@ -21,11 +21,10 @@ const Search = () => {
         Search
       </button>
     </div>
-      </form>
 
-      <div className='secDiv flex items-center gap-2 justify-center'>
+    <div className='secDiv flex items-center gap-2 justify-center'>
         <div className='singleSearch flex items-center gap-2'>
-          <label htmlFor="relevance" className='text-[#808080] font-semibold'>Sort by: </label>
+          <label htmlFor="relevance" className='text-[white] font-semibold'>Sort by: </label>
           <select name="" id="relevance" className='bg-transparent rounded-[3px] px-4 py-1'>
             <option value="">Relevance</option>
             <option value="">Inclusive</option>
@@ -35,7 +34,7 @@ const Search = () => {
         </div>
 
         <div className='singleSearch flex items-center gap-2'>
-          <label htmlFor="type" className='text-[#808080] font-semibold'>Type: </label>
+          <label htmlFor="type" className='text-[white] font-semibold'>Type: </label>
           <select name="" id="type" className='bg-transparent rounded-[3px] px-4 py-1'>
             <option value="">Full Time</option>
             <option value="">Remote</option>
@@ -45,7 +44,7 @@ const Search = () => {
         </div>
 
         <div className='singleSearch flex items-center gap-2'>
-          <label htmlFor="level" className='text-[#808080] font-semibold'>Level: </label>
+          <label htmlFor="level" className='text-[white] font-semibold'>Level: </label>
           <select name="" id="level" className='bg-transparent rounded-[3px] px-4 py-1'>
             <option value="">Senior</option>
             <option value="">Junior</option>
@@ -56,6 +55,9 @@ const Search = () => {
 
         <span className="text-[#a1a1a1] cursor-pointer">Clear All</span>
       </div>
+      </form>
+
+      
     </div>
   )
 }
