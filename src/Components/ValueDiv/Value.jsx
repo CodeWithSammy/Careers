@@ -1,7 +1,7 @@
 import React from 'react';
-import image1 from '../../Assets/images/cover.jpg';
-import image2 from '../../Assets/images/cover.jpg';
-import image3 from '../../Assets/images/cover.jpg';
+import image1 from '../../Assets/images/girl1.png';
+import image2 from '../../Assets/images/circle.png';
+import image3 from '../../Assets/images/rectangleboy.png';
 import './Value.css';
 
 const FunAtWork = () => {

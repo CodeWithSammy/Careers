@@ -3,11 +3,9 @@
   justify-content: flex-start; /* Align items to the start */
   align-items: flex-start; /* Align items at the top */
   padding:90px;
-  background-color: #002f6c; /* Background color */
+  background-color: #2F4794; /* Background color */
   color: white; /* Text color */
 }
-
-
 .images-container {
   display: flex;
   flex-direction: column;

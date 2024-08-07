@@ -1,7 +1,7 @@
 
   /* Gradient container for the top portion */
 .gradient-top {
-    background: linear-gradient(to bottom left,red,blue);
+    background: linear-gradient(to bottom left,#CC0000,#2F4794);
     border-radius: 10px; /* Optional: rounded corners */
     height: 100px; /* Adjust the height as needed */
     width: 100%; /* Adjust width as needed, or set a fixed width */
@@ -14,7 +14,7 @@
   /* Styling for the Apply Now button */
   .apply-button {
     border: 2px solid blue; /* Blue border for the button */
-    background-color: blue; /* Blue background */
+    background-color:  #2F4794; /* Blue background */
     color: white; /* White text */
     border-radius: 10px; /* Rounded corners */
     padding: 10px;
@@ -47,18 +47,18 @@
   }
   
   .top-demands-red {
-    color: red;
+    color:#CC0000
   }
   
   .top-demands-blue {
-    color: blue;
+    color: #2F4794
   }
   
   .top-demands-line {
     margin-top: 10px;
     height: 4px;
     margin-left: 640px;
-    background: linear-gradient(to right, red 60%, rgb(4, 0, 255) 60%);
+    background: linear-gradient(to right,#CC0000 60%,#2F4794 60%);
     width: 190px;
   }
   

@@ -62,7 +62,7 @@ const Jobs = () => {
             <div key={id} className="group group/item singleJob w-[250px] p-[20px] bg-white rounded-[10px] shadow-lg shadow-greyIsh-400/700 hover:shadow-xl">
               <div className="gradient-top rounded-t-[10px]">
                 <div className="gradient-top rounded-t-[10px] text-center">
-            
+            <br></br>
                   <h1 className='text-[16px] font-semibold text-white'>{title}</h1>
                 </div>
               </div>

@@ -1,0 +1,42 @@
+.searchDiv {
+  position: relative; /* Make this container the reference for the absolute positioning */
+  background-image: url('../../Assets/images/landing.png'); /* Ensure this path is correct */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the background image */
+  color: white; /* Default text color to ensure readability on dark backgrounds */
+  height: 620px;
+  overflow: hidden; /* Ensure no overflow of the pseudo-element */
+}
+
+.searchDiv::before {
+  content: ''; /* Required for the pseudo-element to display */
+  position: absolute; /* Position the overlay absolutely within the .searchDiv */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensure the overlay is above the background but below the content */
+}
+
+.searchDiv > * {
+  position: relative; /* Ensure content inside .searchDiv is above the overlay */
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+.firstDiv {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect to the background */
+}
+
+.bg-greyIsh {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay if needed */
+}
+.firstDiv {
+  background-color: #2F4794; /* Slightly transparent blue background */
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect to the background */
+}
+.firstDiv {
+  margin-top: 159px; /* Apply margin-top */
+  /* Other existing styles */
+}
