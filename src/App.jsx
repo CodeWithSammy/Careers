@@ -10,8 +10,9 @@ const App = () => {
     <div className='w- [85%] m-auto bg-white'>
       <Navbar/>
       <Search/>
-      <Jobs/>
       <Value/>
+      <Jobs/>
+    
       <Footer/>
 
     </div>
