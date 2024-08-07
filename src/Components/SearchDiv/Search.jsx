@@ -15,9 +15,6 @@ const Search = () => {
             <input type="text" className='bg-transparent text-white focus:outline-none w-[100%]' placeholder='Search Jobs Here...' />
           </div>
 
-       
-
-
           <button className=' bg-blueColor h-full p-5 px-10 rounded-[10px] text-white cursor-pointer hover:bg-blue-300'>GO</button>
 
         </div>
