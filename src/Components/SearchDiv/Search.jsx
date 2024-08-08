@@ -1,6 +1,6 @@
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineSearch } from 'react-icons/ai';
 
-import "./Search.css";
+import './Search.css';
 
 const Search = () => {
   return (
@@ -26,16 +26,10 @@ const Search = () => {
           </button>
         </div>
 
-        <div className="secDiv flex items-center gap-2 justify-center">
-          <div className="singleSearch flex place-items-center gap-2">
-            <label htmlFor="relevance" className="text-[white] font-semibold">
-              Sort by:{" "}
-            </label>
-            <select
-              name=""
-              id="relevance"
-              className="bg-transparent rounded-[3px] px-1 py-1"
-            >
+        <div className='secDiv flex items-center gap-2 justify-center'>
+          <div className='singleSearch flex place-items-center gap-2'>
+            <label htmlFor="relevance" className='text-[white] font-semibold'>Sort by: </label>
+            <select name="" id="relevance" className='bg-transparent rounded-[3px] px-1 py-1'>
               <option value="">Relevance</option>
               <option value="">Inclusive</option>
               <option value="">Starts With any</option>
@@ -43,15 +37,9 @@ const Search = () => {
             </select>
           </div>
 
-          <div className="singleSearch flex items-center gap-2">
-            <label htmlFor="type" className="text-[white] font-semibold">
-              Type:{" "}
-            </label>
-            <select
-              name=""
-              id="type"
-              className="bg-transparent rounded-[3px] px-4 py-1"
-            >
+          <div className='singleSearch flex items-center gap-2'>
+            <label htmlFor="type" className='text-[white] font-semibold'>Type: </label>
+            <select name="" id="type" className='bg-transparent rounded-[3px] px-4 py-1'>
               <option value="">Full Time</option>
               <option value="">Remote</option>
               <option value="">Contract</option>
@@ -59,15 +47,9 @@ const Search = () => {
             </select>
           </div>
 
-          <div className="singleSearch flex items-center gap-2">
-            <label htmlFor="level" className="text-[white] font-semibold">
-              Level:{" "}
-            </label>
-            <select
-              name=""
-              id="level"
-              className="bg-transparent rounded-[3px] px-4 py-1"
-            >
+          <div className='singleSearch flex items-center gap-2'>
+            <label htmlFor="level" className='text-[white] font-semibold'>Level: </label>
+            <select name="" id="level" className='bg-transparent rounded-[3px] px-4 py-1'>
               <option value="">Senior</option>
               <option value="">Junior</option>
               <option value="">Student</option>

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import image1 from '../../Assets/images/girl1.png';
 import image2 from '../../Assets/images/circle.png';
 import image3 from '../../Assets/images/rectangleboy.png';
@@ -22,8 +22,8 @@ const FunAtWork = () => {
       <div className="text-container">
         <h1 className="title">WORK IS FUN HERE!</h1>
         <p className="description">
-          Ready to love your job again? Succedo is more than just a company; it's a vibrant community of talented individuals who share a passion for success.
-          We believe in work-life balance, innovation, and having a blast while achieving great things. Join us and discover why our employees say it's the best job they've ever had.
+          Ready to love your job again? Succedo is more than just a company; its a vibrant community of talented individuals who share a passion for success.
+          We believe in work-life balance, innovation, and having a blast while achieving great things. Join us and discover why our employees say its the best job they have ever had.
         </p>
       </div>
     </div>
