@@ -13,7 +13,7 @@
   
   /* Styling for the Apply Now button */
   .apply-button {
-    border: 2px solid blue; /* Blue border for the button */
+    border: 2px solid rgb(42, 42, 175); /* Blue border for the button */
     background-color:  #2F4794; /* Blue background */
     color: white; /* White text */
     border-radius: 10px; /* Rounded corners */
@@ -29,17 +29,7 @@
     background-color: darkblue; /* Darker blue on hover */
   }
   /* Style for the TOP DEMANDS section */
-.top-demands {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Style for the TOP DEMANDS section */
-.top-demands {
-    text-align: center;
-    margin-top: 40px; /* Adjust this value to move the section down */
-  }
-  
+
   .top-demands-title {
     font-size: 28px;
     font-weight: bold;
@@ -54,11 +44,17 @@
     color: #2F4794
   }
   
-  .top-demands-line {
+  .top-demands {
+    text-align: center;
+    margin-top: 40px; /* Adjust this value to move the section down */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-demands-line {
     margin-top: 2px;
     height: 4px;
-    margin-left: 640px;
-    background: linear-gradient(to right,#CC0000 60%,#2F4794 60%);
+    background: linear-gradient(to right, #CC0000 60%, #2F4794 60%);
     width: 195px;
-  }
-  
+}

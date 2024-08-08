@@ -1,36 +1,44 @@
 import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { BsFacebook } from 'react-icons/bs';
-
 import './Footer.css';
+import nmls from '../../Assets/images/NMLS.png';
+import echo from '../../Assets/images/eho.png';
+
 const Footer = () => {
   return (
-  
-  <div className='footer p-[5rem] mb-4 rounded-[10px] gap-[4] grid grid-cols-2 m-auto items-start justify-center' style={{ backgroundColor: '#405085' }}>
-  <div>
-    <div className="logoDiv mb-12"> {/* Adjust the margin-bottom as needed */}
-      <h1 className="logo text-white text-4xl flex font-poppins mt-[-30px]">
-        <span className="careers mr-2"><strong>CAREERS</strong></span>
-        <span className="atSuccedo"><strong>AT SUCCEDO</strong></span>
-      </h1>
-    </div>
-
-    <div className='grid col-span-2'>
-      <span className='divTitle text-[16px] font-semibold text-white block pb-[0.5rem]'>TERMS OF SERVICE</span>
-      <span className='divTitle text-[16px] font-semibold text-white block'>PRIVACY POLICY</span>
-   
-
-
-        <div>
-          <div className='icons flex gap-4 py-[1rem]'>
-            <AiFillInstagram className='bg-transparent p-[8px] h-[35px] w-[35px] rounded-full text-white' />
-            <BsFacebook className='bg-transparent p-[8px] h-[35px] w-[35px] rounded-full text-white' />
-            <AiOutlineTwitter className='bg-transparent p-[8px] h-[35px] w-[35px] rounded-full text-white' />
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-left">
+          <h1 className="footer-logo">
+            <span className="text-red-600">CAREERS </span> <span className="text-white">AT SUCCEDO</span>
+          </h1>
+          <p>Proudly Serving all of Texas and Colorado</p>
+        </div>
+        <div className="footer-right">
+          <div className="footer-links">
+            <a href="/Privacy" className="footer-link">Privacy Policy</a>
+            <a href="https://www.nmlsconsumeraccess.org/" className="footer-link">NMLS Consumer Access</a>
+          </div>
+          <div className="footer-icons">
+            <AiFillInstagram className="footer-icon" />
+            <BsFacebook className="footer-icon" />
+            <AiOutlineTwitter className="footer-icon" />
           </div>
         </div>
       </div>
-    </div>
-    </div>
-
+      <div className="footer-images">
+        <img src={nmls} alt="NMLS" className="footer-image" />
+        <img src={echo} alt="EHO" className="footer-image" />
+      </div>
+      <div className="footer-bottom">
+        <p>
+          CONSUMERS WISHING TO FILE A COMPLAINT AGAINST A COMPANY OR A RESIDENTIAL MORTGAGE LOAN ORIGINATOR SHOULD COMPLETE AND SEND A COMPLAINT FORM TO THE TEXAS DEPARTMENT OF SAVINGS AND MORTGAGE LENDING, 2601 NORTH LAMAR, SUITE 201, AUSTIN, TEXAS 78705. COMPLAINT FORMS AND INSTRUCTIONS MAY BE OBTAINED FROM THE DEPARTMENT’S WEBSITE AT WWW.SML.TEXAS.GOV. THE DEPARTMENT MAINTAINS A RECOVERY FUND TO MAKE PAYMENTS OF CERTAIN ACTUAL OUT OF POCKET DAMAGES SUSTAINED BY BORROWERS CAUSED BY ACTS OF LICENSED RESIDENTIAL MORTGAGE LOAN ORIGINATORS. A WRITTEN APPLICATION FOR REIMBURSEMENT FROM THE RECOVERY FUND MUST BE FILED WITH AND INVESTIGATED BY THE DEPARTMENT PRIOR TO THE PAYMENT OF A CLAIM. FOR MORE INFORMATION ABOUT THE RECOVERY FUND, PLEASE CONSULT THE DEPARTMENT’S WEBSITE AT WWW.SML.TEXAS.GOV.
+        </p>
+        <p>
+          &copy; 2024 Succedo Mortgage, LLC NMLS: 2584954 Licensed In: Texas and Colorado
+        </p>
+      </div>
+    </footer>
   );
 }
 

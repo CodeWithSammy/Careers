@@ -1,19 +1,143 @@
 /* Footer.css */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /* Import the Poppins font */
 
-.logo {
-  font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
-  font-size: 25px;
-  margin-top:1px; /* Add margin-top */
-  text-align: center; /* Center the text */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+.footer {
+  background-color: #405085;
+  padding: 5rem;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.logo .careers {
-  color: red; /* Red color for "CAREERS" */
-  display: block;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.logo .atSuccedo {
-  color: white; /* White color for "AT SUCCEDO" */
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 300px; /* Prevent items from being too small */
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  font-weight: 800; /* Extra bold */
+  width: 100%; /* Make sure the width is responsive */
+  margin-bottom: 1rem;
+  font-size: 2rem; /* Default size */
+  white-space: nowrap; /* Ensure text does not wrap */
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    font-size: 1.5rem; /* Adjust for smaller screens */
+  }
+
+  .footer-left,
+  .footer-right {
+    flex: 1 1 100%; /* Stack items vertically */
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 1rem;
+  }
+
+  .footer {
+    padding: 3rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    font-size: 1.25rem; /* Further adjustment for very small screens */
+  }
+
+  .footer {
+    padding: 2rem; /* Less padding on very small screens */
+  }
+}
+
+.footer-left p {
+  margin: 0.5rem 0;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-link {
   display: block;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.footer-icon {
+  background: transparent;
+  padding: 8px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: white;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-image {
+  width: 80px; /* Default width */
+}
+
+@media (max-width: 768px) {
+  .footer-image {
+    width: 60px; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-image {
+    width: 50px; /* Further adjustment for very small screens */
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 2rem;
+}
+
+.footer-bottom p {
+  margin: 0.5rem 0;
+  font-size: 14px; /* Default size */
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom p {
+    font-size: 12px; /* Smaller font size on smaller screens */
+  }
 }
