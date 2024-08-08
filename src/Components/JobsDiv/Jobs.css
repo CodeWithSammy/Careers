@@ -55,10 +55,10 @@
   }
   
   .top-demands-line {
-    margin-top: 10px;
+    margin-top: 2px;
     height: 4px;
     margin-left: 640px;
     background: linear-gradient(to right,#CC0000 60%,#2F4794 60%);
-    width: 190px;
+    width: 195px;
   }
   
