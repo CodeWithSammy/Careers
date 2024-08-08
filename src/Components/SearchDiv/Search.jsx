@@ -27,30 +27,30 @@ const Search = () => {
           <div className='singleSearch flex place-items-center gap-2'>
             <label htmlFor="relevance" className='text-[white] font-semibold'>Sort by: </label>
             <select name="" id="relevance" className='bg-transparent rounded-[3px] px-1 py-1'>
-              <option value="">Relevance</option>
-              <option value="">Inclusive</option>
-              <option value="">Starts With any</option>
-              <option value="">Contains</option>
+              <option value=""style={{ color: 'black' }}>Relevance</option>
+              <option value=""style={{ color: 'black' }}>Inclusive</option>
+              <option value=""style={{ color: 'black' }}>Starts With any</option>
+              <option value=""style={{ color: 'black' }}>Contains</option>
             </select>
           </div>
 
           <div className='singleSearch flex items-center gap-2'>
             <label htmlFor="type" className='text-[white] font-semibold'>Type: </label>
             <select name="" id="type" className='bg-transparent rounded-[3px] px-4 py-1'>
-              <option value="">Full Time</option>
-              <option value="">Remote</option>
-              <option value="">Contract</option>
-              <option value="">Part-Time</option>
+              <option value=""style={{ color: 'black' }}>Full Time</option>
+              <option value=""style={{ color: 'black' }}>Remote</option>
+              <option value=""style={{ color: 'black' }}>Contract</option>
+              <option value=""style={{ color: 'black' }}>Part-Time</option>
             </select>
           </div>
 
           <div className='singleSearch flex items-center gap-2'>
             <label htmlFor="level" className='text-[white] font-semibold'>Level: </label>
             <select name="" id="level" className='bg-transparent rounded-[3px] px-4 py-1'>
-              <option value="">Senior</option>
-              <option value="">Junior</option>
-              <option value="">Student</option>
-              <option value="">Advocate</option>
+              <option value=""style={{ color: 'black' }}>Senior</option>
+              <option value=""style={{ color: 'black' }}>Junior</option>
+              <option value=""style={{ color: 'black' }}>Student</option>
+              <option value=""style={{ color: 'black' }}>Advocate</option>
             </select>
           </div>
 
