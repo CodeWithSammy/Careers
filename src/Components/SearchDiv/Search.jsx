@@ -1,23 +1,23 @@
 import { AiOutlineSearch } from 'react-icons/ai';
-// import coverImage from '../../Assets/images/cover.jpg'; // Import the image properly
 import './Search.css';
+
 const Search = () => {
   return (
-    <div className='searchDiv grid gap-10  p-[3rem]'>
+    <div className='searchDiv grid gap-10 p-[3rem]'>
       <form action="">
         <div
           className='firstDiv flex justify-between items-center rounded-[8px] gap-[10px] p-5 shadow-lg shadow-greyIsh-700'
-          style={{ backgroundColor: ' #2F4794' }} // Apply blue color directly
+          style={{ backgroundColor: '#2F4794' }} // Apply blue color directly
         >
           <div className='flex gap-2 items-center'>
-            <AiOutlineSearch className='text-[25px] icon' />
+            <AiOutlineSearch className='text-[25px] text-white' /> {/* Adjust icon color to fit the theme */}
             <input
               type="text"
-              className='bg-transparent text-blue-500 focus:outline-none w-[100%]'
+              className='bg-transparent text-white focus:outline-none w-[100%] placeholder:text-gray-300'
               placeholder='Search Jobs Here...'
             />
           </div>
-          <button className='bg-white text-blue-500 border border-blue-500 h-full p-5 px-10 rounded-[10px] cursor-pointer hover:bg-blue-500 hover:text-white'>
+          <button className='bg-white text-blue-500 border border-blue-500 h-full p-3 px-8 rounded-[10px] cursor-pointer hover:bg-blue-500 hover:text-white transition-colors duration-300'>
             Search
           </button>
         </div>
@@ -28,7 +28,7 @@ const Search = () => {
             <select name="" id="relevance" className='bg-transparent rounded-[3px] px-1 py-1'>
               <option value="">Relevance</option>
               <option value="">Inclusive</option>
-              <option value="">Starts With</option>
+              <option value="">Starts With any</option>
               <option value="">Contains</option>
             </select>
           </div>
@@ -56,10 +56,9 @@ const Search = () => {
           <span className="text-[white] cursor-pointer">Clear All</span>
         </div>
       </form>
-
-
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;
+   

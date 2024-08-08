@@ -68,7 +68,7 @@ const Jobs = () => {
               </div>
               <div className="description-container mt-4">
                 <p className='text-[13px] text-[#959595] border-t-[2px] pt-[20px]'>
-                  <h5 className="text-[#373737]">Job Description:</h5>
+                  <h5 className="text-[#373737]">Job Description.:</h5>
                   {desc}
                 </p>
               </div>

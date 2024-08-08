@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className='navBar flex justify-between items-center p-[3rem'>
       <div className='logoDiv'>
         <h1 className="logo text-[25px] text-blueColor">
-          <strong>Careers</strong>
+          <strong>CAREERS AT SUCCEDO</strong>
         </h1>
       </div>
 

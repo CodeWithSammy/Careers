@@ -1,0 +1,19 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /* Import the Poppins font */
+
+.logo {
+  font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
+  font-size: 25px;
+  margin-top:1px; /* Add margin-top */
+  text-align: center; /* Center the text */
+}
+
+.logo .careers {
+  color: red; /* Red color for "CAREERS" */
+  display: block;
+}
+
+.logo .atSuccedo {
+  color: white; /* White color for "AT SUCCEDO" */
+  display: block;
+}
