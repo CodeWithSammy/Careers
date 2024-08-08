@@ -1,5 +1,5 @@
 import { AiOutlineSearch } from 'react-icons/ai';
-import coverImage from '../../Assets/images/cover.jpg'; // Import the image properly
+// import coverImage from '../../Assets/images/cover.jpg'; // Import the image properly
 import './Search.css';
 const Search = () => {
   return (
