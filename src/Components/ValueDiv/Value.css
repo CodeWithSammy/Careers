@@ -1,57 +1,61 @@
 .fun-at-work-container {
   display: flex;
-  justify-content: flex-start; /* Align items to the start */
-  align-items: flex-start; /* Align items at the top */
-  padding:90px;
-  background-color: #2F4794; /* Background color */
-  color: white; /* Text color */
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 90px;
+  background-color: #2F4794;
+  color: white;
+  position: relative;
 }
+
 .images-container {
   display: flex;
-  flex-direction: column;
   position: relative;
-  margin-right: 20px; /* Space between images and text */
+  margin-right: 20px;
 }
 
 .image-wrapper {
-  position: absolute;
-  border-radius: 15px; /* Slightly rounded corners */
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow effect */
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5); /* White shadow effect */ /* White shadow effect */
+  position: absolute;
 }
+
 
 .image1 {
   width: 250px;
+  
   height: 280px;
+  top: 0;
+  left: 0;
 }
 
 .image2 {
   width: 150px;
   height: 150px;
-  border-radius: 50%; /* Circular shape */
-  top: 180px;
-  left: 270px;
+  border-radius: 50%;
+  top: 200px; /* Adjust based on your desired spacing */
+  left: 260px; /* Adjust to ensure it overlaps with image1 */
 }
 
 .image3 {
   width: 120px;
   height: 190px;
-  top: 0;
-  left: 430px;
+  top: 10px; /* Adjust to align with image1 */
+  left: 400px; /* Adjust to overlap with image2 */
 }
 
 .image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the container */
+  object-fit: cover;
 }
 
 .text-container {
-  max-width: 600px; /* Ensure it doesn’t take too much space */
-  margin-left: 810px;
-  text-align: justify;
+  max-width: 600px;
+  margin-left: 650px; /* Adjusted to match the image layout */
+  text-align: left;
 }
-
 
 .title {
   font-size: 32px;

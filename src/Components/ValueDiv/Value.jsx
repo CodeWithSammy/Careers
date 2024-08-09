@@ -2,6 +2,7 @@
 import image1 from '../../Assets/images/girl1.png';
 import image2 from '../../Assets/images/circle.png';
 import image3 from '../../Assets/images/rectangleboy.png';
+import rect1 from '../../Assets/images/Rectangle-7.png';
 import './Value.css';
 
 const FunAtWork = () => {
@@ -11,6 +12,7 @@ const FunAtWork = () => {
       <div className="images-container">
         <div className="image-wrapper image1">
           <img src={image1} alt="Employee 1" className="image" />
+          <img src={rect1} alt="Rect1" className="image" />
         </div>
         <div className="image-wrapper image2">
           <img src={image2} alt="Employees working" className="image" />
