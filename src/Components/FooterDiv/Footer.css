@@ -1,15 +1,25 @@
-/* Footer.css */
+/* Ensure consistent box-sizing */
+* {
+  box-sizing: border-box;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+/* General body and HTML settings */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
 
+/* Footer styling */
 .footer {
   background-color: #405085;
   padding: 5rem;
   border-radius: 10px;
   color: white;
   font-family: 'Poppins', sans-serif;
-  margin: 0;
-  box-sizing: border-box;
+  width: 100%; /* Full width */
+  max-width: 100%; /* Prevent overflow */
+  box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .footer-container {
@@ -17,34 +27,35 @@
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  max-width: 100%;
-  margin: 0 auto;
 }
 
-.footer-left,
-.footer-right {
+.footer-left, .footer-right {
   flex: 1;
   min-width: 300px; /* Prevent items from being too small */
   margin-bottom: 1rem;
 }
 
 .footer-logo {
-  font-weight: 800; /* Extra bold */
-  width: 100%; /* Make sure the width is responsive */
+  font-weight: 800;
+  width: 100%;
   margin-bottom: 1rem;
   font-size: 2rem; /* Default size */
-  white-space: nowrap; /* Ensure text does not wrap */
+  white-space: nowrap;
 }
 
+.footer-left p, .footer-right p {
+  margin: 0.5rem 0;
+}
+
+/* Adjustments for screens smaller than 768px */
 @media (max-width: 768px) {
   .footer-logo {
-    font-size: 1.5rem; /* Adjust for smaller screens */
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
 
-  .footer-left,
-  .footer-right {
+  .footer-left, .footer-right {
     flex: 1 1 100%; /* Stack items vertically */
-    text-align: center;
+    text-align: center; /* Center align text */
   }
 
   .footer-right {
@@ -52,22 +63,27 @@
   }
 
   .footer {
-    padding: 3rem; /* Adjust padding for smaller screens */
+    padding: 3rem; /* Adjust padding */
   }
 }
 
+/* Adjustments for screens smaller than 480px */
 @media (max-width: 480px) {
   .footer-logo {
-    font-size: 1.25rem; /* Further adjustment for very small screens */
+    font-size: 1.25rem; /* Further reduce font size */
   }
 
   .footer {
-    padding: 2rem; /* Less padding on very small screens */
+    padding: 2rem; /* Less padding */
   }
-}
 
-.footer-left p {
-  margin: 0.5rem 0;
+  .footer-left, .footer-right {
+    text-align: center; /* Ensure centered text alignment */
+  }
+
+  .footer-bottom p {
+    font-size: 12px; /* Smaller font size */
+  }
 }
 
 .footer-right {
@@ -108,18 +124,18 @@
 }
 
 .footer-image {
-  width: 80px; /* Default width */
+  width: 80px;
 }
 
 @media (max-width: 768px) {
   .footer-image {
-    width: 60px; /* Adjust width for smaller screens */
+    width: 60px;
   }
 }
 
 @media (max-width: 480px) {
   .footer-image {
-    width: 50px; /* Further adjustment for very small screens */
+    width: 50px;
   }
 }
 
@@ -132,12 +148,6 @@
 
 .footer-bottom p {
   margin: 0.5rem 0;
-  font-size: 14px; /* Default size */
+  font-size: 14px;
   line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-  .footer-bottom p {
-    font-size: 12px; /* Smaller font size on smaller screens */
-  }
 }
